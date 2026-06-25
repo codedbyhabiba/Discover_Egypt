@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body {
+    background-color:whitesmoke;
+    background-attachment: fixed; 
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+   
+    
+
+/* الهيدر */
+.header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("matrouh.jpg");
+    background-size: cover;
+    background-position: center ;
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;      
+    padding: 0 15%;         
+    color: white;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.header h1 {
+    font-size: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(245, 253, 255, 0.7);
+    animation: fadeInUp 1s ease-out;
+}
+
+
+.header p {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    text-align: center;
+    max-width: 650px; 
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease-out;
+}
+
+
+/* الاماكن */
+.places {
+    display:flex;
+    flex-wrap:wrap;
+    margin: auto;
+    justify-content: center;
+    align-items:stretch;    
+    width: 85%;
+    gap:20px;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color:#003690;
+}
+
+/* الكارت */
+.card {
+    
+    margin-bottom: 10px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction:column;
+    background: white;
+    overflow:hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width:28%;
+}
+
+.card img {
+    height:200px;
+    object-fit: cover;
+} 
+
+.card:hover {
+    transform: scale(1.05);
+}
+.info {
+    padding: 20px;
+}
+.info h3 {
+    margin: 0;
+    color:#003690;
+}
+
+.info p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: #444;
+    line-height: 1.5;
+}
